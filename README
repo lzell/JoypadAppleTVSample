@@ -1,0 +1,3 @@
+JoypadManager cannot be used in BRBaseAppliance.  It will crash AppleTV.app once a device is found; 
+I'm not sure why this happens, but it has something to do with dnssd.
+
