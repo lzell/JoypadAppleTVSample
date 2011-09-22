@@ -1,3 +1,15 @@
+Usage: 
+
+1. Set the IP or hostname of your Apple TV in the target build settings next to ATV_ADDRESS.
+2. Build - a new app will install on your AppleTV with a Joypad Menu.
+3. Start Joypad on your iPhone and then click "Connect to Joypad" menu item on Apple TV.
+   A controller will slide up on your Joypad (make sure your iPhone is on the same wifi network).
+4. SSH into your Apple TV and tail the log at /var/log/syslog.  When you move the analog stick 
+   on Joypad, you will see updates to the log.
+
+* This is a work in progress.  If those instructions didn't make sense, then this repo isn't ready for you yet :)
+The regular Joypad SDK (the one that is live on getjoypad.com/sdk.html) is very well documented and easy to use.
+
 JoypadManager cannot be used in BRBaseAppliance.  It will crash AppleTV.app once a device is found; 
-I'm not sure why this happens, but it has something to do with dnssd.
+I'm not sure why this happens.
 
